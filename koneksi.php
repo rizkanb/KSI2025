@@ -1,10 +1,11 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pass = ""; // isi jika ada password
-$db   = "ksi2025";
+$pass = "";
+$db   = "KSI2025"; // sesuaikan dengan nama database kamu
 
 $koneksi = new mysqli($host, $user, $pass, $db);
+
 if ($koneksi->connect_error) {
     die("Koneksi gagal: " . $koneksi->connect_error);
 }
